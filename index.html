@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+			body{
+				width: 100%;
+				height: 1000px;
+				
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.bg{
+				margin-top: 100px;
+				text-align: center;
+				line-height: 100%;
+			}
+			.bg .stage{
+				width: 200px;
+				height: 200px;
+				perspective: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.bg .stage .container{
+				position: absolute;
+				left: 0px;
+				
+				height: 200px;
+				width: 200px;
+				-webkit-animation: shaizi 10s infinite linear;
+				transform: rotateY(20deg) rotateX(20deg) rotateZ(20deg);
+				transform-style: preserve-3d;
+			}
+			@keyframes shaizi{
+				from{transform: rotateY(60deg) rotateX(0deg) rotateZ(100deg);}
+				50%{transform: rotateY(240deg) rotateX(180deg) rotateZ(280deg);}
+				to{transform: rotateY(420deg) rotateX(360deg) rotateZ(460deg);}
+			}
+			.bg .stage .container ul li{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				
+			}
+			.bg .stage .container ul li:nth-child(1){
+				transform: translateZ(100px);
+			}
+			.bg .stage .container ul li:nth-child(2){
+				transform: translateX(-100px) rotateY(-90deg);
+			}
+			.bg .stage .container ul li:nth-child(3){
+				transform: translateZ(-100px) rotateY(180deg);
+			}
+			.bg .stage .container ul li:nth-child(4){
+				transform: translateX(100px) rotateY(90deg);
+			}
+			.bg .stage .container ul li:nth-child(5){
+				transform: translateY(100px) rotateX(-90deg);
+			}
+			.bg .stage .container ul li:nth-child(6){
+				transform: translateY(-100px) rotateX(90deg);
+			}
+			.bg .stage .container ul li img{
+				width: 200px;
+				height: 200px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="stage">
+				<div class="container">
+					<ul>
+						<li><img src="img/hdImg_0d616f3a6bfdcd0cc9c5c6876e4a074814942330863.jpg"/></li>
+						<li><img src="img/hdImg_a54b705ebb15eabc84c41db70044e9fd14942330651.jpg" alt="" /></li>
+						<li><img src="img/hdImg_0d616f3a6bfdcd0cc9c5c6876e4a074814942330863.jpg"/></li>
+						<li><img src="img/hdImg_a54b705ebb15eabc84c41db70044e9fd14942330651.jpg" alt="" /></li>
+						<li><img src="img/hdImg_0d616f3a6bfdcd0cc9c5c6876e4a074814942330863.jpg"/></li>
+						<li><img src="img/hdImg_a54b705ebb15eabc84c41db70044e9fd14942330651.jpg" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
